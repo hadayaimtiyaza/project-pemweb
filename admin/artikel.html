@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - SD Negeri 3 Banteran</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div>
+        <a href="artikel.html">Artikel</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="guru.html">Guru</a>
+    </div>
+    <h1>Daftar artikel</h1>
+    <h2>Tambah artikel</h2>
+    <form id="form-artikel" enctype="multipart/form-data">
+        <input type="text" id="judul" name="judul" placeholder="Judul artikel" required>
+        <textarea id="konten" rows="10" name="konten" placeholder="Konten artikel"></textarea>
+        <input type="text" id="penulis" name="penulis" placeholder="Penulis" required>
+        <input type="date" id="tanggal" name="tanggal" placeholder="Tanggal" required>
+        <input type="file" id="gambar" name="gambar" placeholder="Gambar" required>
+        <input type="text" id="tag" name="tag" placeholder="tag" required>
+        <button id="submit-artikel" type="submit">Tambah artikel</button>
+    </form>
+    
+    <hr>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Cari judul artikel...">
+        <button id="search-btn">Cari</button>
+    </div>
+
+    <div id="daftar-data"></div>
+    <p id="loading" style="display:none">Sedang memuat data...</p>
+
+    <script src="artikel.js"></script>
+</body>
+</html>

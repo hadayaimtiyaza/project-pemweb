@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru - SD Negeri 3 Banteran</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div>
+        <a href="artikel.html">Artikel</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="guru.html">Guru</a>
+    </div>
+    <h1>Daftar guru</h1>
+    <h2>Tambah guru</h2>
+    <form id="form-guru" enctype="multipart/form-data">
+        <input type="text" name="jabatan" id="jabatan" placeholder="Jabatan" required>
+        <input type="text" name="nama" id="nama" placeholder="Nama" required>
+        <input type="text" name="nip" id="nip" placeholder="NIP" required>
+        <input type="file" name="gambar" id="gambar" placeholder="Gambar" required>
+        <button id="submit-guru" type="submit">Tambah guru</button>
+    </form>
+    
+    <hr>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Cari nama guru...">
+        <button id="search-btn">Cari</button>
+    </div>
+
+    <div id="daftar-data"></div>
+    <p id="loading" style="display:none">Sedang memuat data...</p>
+
+    <script src="guru.js"></script>
+</body>
+</html>

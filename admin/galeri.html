@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - SD Negeri 3 Banteran</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div>
+        <a href="artikel.html">Artikel</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="guru.html">Guru</a>
+    </div>
+    <h1>Daftar galeri</h1>
+    <h2>Tambah galeri</h2>
+    <div style="display: flex; gap: 10px">
+        <form id="form-galeri" enctype="multipart/form-data">
+            <input type="text" name="judul" id="judul" placeholder="Judul galeri">
+            <input type="file" name="gambar" id="gambar" placeholder="Gambar">
+            <select name="kolom" id="kolom">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <button id="submit-galeri" type="submit">Tambah galeri</button>
+        </form>
+        <div style="display: flex; flex-wrap: wrap" id="daftar-galeri">
+        </div>
+        <p id="loading" style="display:none">Sedang memuat data...</p>
+    </div>
+    
+    <hr>
+    <div class="container">        
+        <ul class="gallery p-0">
+            <li class="wide outliner" id="kolom-1">
+                <!-- <img width="768" height="576" src="../assets/gambar/kegiatanpram1.webp" alt=""
+                    title="" loading="pramuka" /> -->
+                <h1>1</h1>
+            </li>
+            <li class="outliner" id="kolom-2">
+                <!-- <img width="768" height="576" src="../assets/gambar/apiunggun.webp" alt="" title=""
+                    loading="apiunggun" /> -->
+                <h1>2</h1>
+            </li>
+            <li class="high outliner" id="kolom-3">
+                <!-- <img width="768" height="576" src="../assets/gambar/bersih lingkungan2.webp" alt=""
+                    title="" loading="bersih lingkungan" /> -->
+                <h1>3</h1>
+            </li>
+            <li class="wider outliner" id="kolom-4">
+                <!-- <img width="768" height="576" src="../assets/gambar/upacara.webp" alt="" title=""
+                    loading="upacara" /> -->
+                <h1>4</h1>
+            </li>
+            <li class="outliner" id="kolom-5">
+                <!-- <img width="768" height="576" src="../assets/gambar/FLS2N 2023.jpg" alt="" title=""
+                    loading="FLS2N 2023" /> -->
+                <h1>5</h1>
+            </li>
+            <li class="outliner" id="kolom-6">
+                <!-- <img width="768" height="432" src="../assets/gambar/FLS2N.webp" alt="" title="" loading="FLS2N" /> -->
+                <h1>6</h1>
+            </li>
+            <li class="wide outliner" id="kolom-7">
+                <!-- <img width="768" height="576" src="../assets/gambar/lombahutri.webp" alt="" title=""
+                    loading="lomba" /> -->
+                <h1>7</h1>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="galeri.js"></script>
+</body>
+</html>
